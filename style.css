@@ -1,0 +1,118 @@
+/* Basic setup */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6c65e7, #69d4b1,#5ae4dd);
+    background-color: #afece9;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+}
+/* Main card */
+.card{
+    background: rgb(87, 223, 216);
+    padding: 40px 30px;
+    width: 300px;
+    border-radius: 20px;
+    border-shadow : 0 10px 30 px rgba(255,180, 0, 0.2);
+    text-align:center;
+}
+h2 ,h3,h4{
+    color: #d63384;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #141314;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.7s;
+    background-color: #f0e9ea;
+
+
+}
+input:focus {
+    border-color: #e90979;
+    background-color:white;
+}
+/*button , signup */
+button,
+.signup-bnt{
+    flex: 1;
+    width: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: rgb(241, 232, 232);
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: transform 0.2s;
+    /* width: 0%;
+    padding: 5px;
+    justify-content: center;
+    margin-bottom :6px;
+    background:linear-gradient(45deg ,#ff9a9e ,#fad0c4) ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: transform 0.2; */
+    
+
+
+}
+button:hover,
+.signup-bnt:hover{
+    transform: scale(0.9);
+    background: linear-gradient(45 deg, #d63384, #ff73b3);
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+
+}
+.buttons button,
+.buttons .signup-bnt{
+    flex: 1;
+    width: auto;
+    padding: 10px;
+}
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+}
+
+.password-box span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

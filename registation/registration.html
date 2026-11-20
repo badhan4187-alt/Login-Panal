@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="form-container">
+        <header class="form-header">
+            <h1> Registration</h1>
+            <p>Please fill in the form below to create your account.</p>
+        </header>
+
+        <form action="#" method="post">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        placeholder="Enter your first name"
+                        autocomplete="given-name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        placeholder="Enter your last name"
+                        autocomplete="family-name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="date_of_birth"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="01XXXXXXXXX"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password (at least 8 characters)"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+
+                <fieldset class="form-group full-width gender-group">
+                    <legend>Gender</legend>
+                    <div class="radio-options">
+                        <label class="choice-label">
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="choice-label">
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group full-width">
+                    <label for="district">District</label>
+                    <select id="district" name="district" required>
+                        <option value="" disabled selected>Select your district</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Cumilla">Cumilla</option>
+                        <option value="Gazipur">Gazipur</option>
+                    </select>
+                </div>
+            </div>
+
+            <label class="terms-label">
+                <input type="checkbox" name="terms" value="agreed" required>
+                <span>I agree to the Terms and Conditions.</span>
+            </label>
+
+            <div class="button-row">
+                <button type="submit" class="register-button">Register</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+
+        <p class="form-note">This is a practice form. It does not save or send your information.</p>
+    </main>
+</body>
+</html>
